@@ -87,27 +87,27 @@ Fires a new request incoming event and start to calculates request_time sum and 
  - First request ngx metric status
 ```json
 {
-  /hello/world: {
-    req_time: 12662.673000007,
-    code_ok: 39186
+  "/hello/world": {
+    "req_time": 12662.673000007,
+    "code_ok": 39186
   },
-  /hello/ngx: {
-    req_time: 12233.748000018,
-    code_ok: 96952
+  "/hello/ngx": {
+    "req_time": 12233.748000018,
+    "code_ok": 96952
   }
 }
 ```
   - Second request ngx metric status
 ```json
 {
-  /hello/world: {
-    code_5xx: 42,
-    req_time: 12524.213000018,
-    code_ok: 99212
+  "/hello/world": {
+    "code_5xx": 42,
+    "req_time": 12524.213000018,
+    "code_ok": 99212
   },
-  /hello/ngx: {
-    req_time: 12963.532000007,
-    code_ok: 40117
+  "/hello/ngx": {
+    "req_time": 12963.532000007,
+    "code_ok": 40117
   }
 }
 ```
